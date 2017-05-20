@@ -1,0 +1,10 @@
+---
+server:
+  port: 8014
+
+swagger:
+  title: Sample Aggregate
+  description: aggregates json apis
+  baseurl: http://localhost:8082
+  apis:
+      - /<path>/v2/api-docs

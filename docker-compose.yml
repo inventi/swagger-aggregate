@@ -1,0 +1,12 @@
+swagger-ui:
+  image: swaggerapi/swagger-ui
+  ports:
+    - 8080:8080
+
+swagger-aggregate:
+  image: inventi/swagger-aggregate:1.0
+  command: java -jar app.jar --spring.config.location=file:///conf.yaml
+  volumes:
+    - ./sample-config.yml:/conf.yaml
+  ports:
+    - 8014:8014

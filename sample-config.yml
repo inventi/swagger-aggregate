@@ -1,0 +1,10 @@
+---
+server:
+  port: 8014
+
+swagger:
+  title: Sample Aggregate
+  description: aggregates json apis
+  baseurl: http://petstore.swagger.io
+  apis:
+      - /v2/swagger.json
